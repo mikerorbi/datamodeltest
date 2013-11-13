@@ -49,7 +49,7 @@
 </key>
 <comment>Testing table 1</comment>
 </table>
-<table x="143" y="10" name="Child">
+<table x="361" y="164" name="Child">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="Testing 1" row="id" />
