@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- SQL XML created by WWW SQL Designer, http://code.google.com/p/wwwsqldesigner/ -->
-<!-- Active URL: http://dollyaswin.net/odesk/sqldesigner/index.html# -->
+<!-- Active URL: http://model.ossdm.com/# -->
 <sql>
 <datatypes db="mysql">
 	<group label="Numeric" color="rgb(238,238,170)">
@@ -37,7 +37,7 @@
 		<type label="SET" length="1" sql="SET" quote=""/>
 		<type label="Bit" length="0" sql="bit" quote=""/>
 	</group>
-</datatypes><table x="10" y="10" name="Testing 1">
+</datatypes><table x="10" y="10" name="Parent">
 <row name="id" null="0" autoincrement="1">
 <datatype>SMALLINT(5)</datatype>
 </row>
@@ -49,15 +49,15 @@
 </key>
 <comment>Testing table 1</comment>
 </table>
-<table x="361" y="164" name="Child">
+<table x="33" y="118" name="Child">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
-<default>NULL</default><relation table="Testing 1" row="id" />
+<default>NULL</default><relation table="Parent" row="id" />
 </row>
 <row name="testing_id" null="1" autoincrement="0">
 <datatype>SMALLINT(5)</datatype>
 <default>NULL</default></row>
-<row name="silly_name" null="1" autoincrement="0">
+<row name="bad_name" null="1" autoincrement="0">
 <datatype>VARCHAR(64)</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
